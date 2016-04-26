@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    {
+        return .All
+    }
+    
     var typing = false
     var n1 = 0; var n2 = 0
     var op = ""
