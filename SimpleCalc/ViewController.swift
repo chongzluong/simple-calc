@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     var op = ""
     var count = 0
     var sum = 0
+    var history: [String] = []
+    var line = ""
     
     @IBAction func numClicked(sender: AnyObject) {
         if typing {
@@ -50,6 +52,7 @@ class ViewController: UIViewController {
             count += 1
             sum += n1
         }
+        line += String(n1) + op
     }
     
     @IBAction func equals(sender: AnyObject) {
@@ -77,7 +80,7 @@ class ViewController: UIViewController {
                 count = 0
                 break
             case "Avg":
-                result = sum / (count + 1)
+                result = (sum + n2) / (count + 1)
                 count = 0
                 sum = 0
                 break
@@ -91,6 +94,14 @@ class ViewController: UIViewController {
                 result = 0
         }
         resultText.text = "\(result)"
+        if (op == "Fact") {
+            history.append(line + "=" + String(result))
+            NSLog(line + "=" + String(result))
+        } else {
+            history.append(line + String(n2) + "=" + String(result))
+            NSLog(line + String(n2) + "=" + String(result))
+        }
+        line = ""
     }
 
 }
