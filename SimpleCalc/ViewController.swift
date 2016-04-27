@@ -52,7 +52,11 @@ class ViewController: UIViewController {
             count += 1
             sum += n1
         }
-        line += String(n1) + op
+        if op == "%" {
+            line += String(n1) + "mod"
+        } else {
+            line += String(n1) + String(op)
+        }
     }
     
     @IBAction func equals(sender: AnyObject) {
@@ -96,12 +100,16 @@ class ViewController: UIViewController {
         resultText.text = "\(result)"
         if (op == "Fact") {
             history.append(line + "=" + String(result))
-            NSLog(line + "=" + String(result))
         } else {
             history.append(line + String(n2) + "=" + String(result))
-            NSLog(line + String(n2) + "=" + String(result))
         }
+        NSLog(history[history.count - 1])
         line = ""
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let HistoryView: HistoryViewController = segue.destinationViewController as! HistoryViewController;
+        HistoryView.history = history;
     }
 
 }

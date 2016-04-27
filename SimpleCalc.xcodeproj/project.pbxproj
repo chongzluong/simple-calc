@@ -13,6 +13,7 @@
 		158D5FB91CC95B890019E53C /* SimpleCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158D5FB71CC95B890019E53C /* SimpleCalc.xcdatamodeld */; };
 		158D5FBB1CC95B890019E53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158D5FBA1CC95B890019E53C /* Assets.xcassets */; };
 		158D5FBE1CC95B890019E53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158D5FBC1CC95B890019E53C /* LaunchScreen.storyboard */; };
+		15C799D21CD04037009DA437 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C799D11CD04037009DA437 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		158D5FBA1CC95B890019E53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158D5FBD1CC95B890019E53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		158D5FBF1CC95B890019E53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C799D11CD04037009DA437 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				158D5FB01CC95B890019E53C /* AppDelegate.swift */,
 				158D5FB21CC95B890019E53C /* ViewController.swift */,
+				15C799D11CD04037009DA437 /* HistoryViewController.swift */,
 				158D5FB41CC95B890019E53C /* Main.storyboard */,
 				158D5FBA1CC95B890019E53C /* Assets.xcassets */,
 				158D5FBC1CC95B890019E53C /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				158D5FB31CC95B890019E53C /* ViewController.swift in Sources */,
 				158D5FB11CC95B890019E53C /* AppDelegate.swift in Sources */,
 				158D5FB91CC95B890019E53C /* SimpleCalc.xcdatamodeld in Sources */,
+				15C799D21CD04037009DA437 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
